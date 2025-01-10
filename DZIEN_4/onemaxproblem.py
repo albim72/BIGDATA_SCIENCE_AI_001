@@ -29,3 +29,11 @@ toolbox.register("mutate",tools.mutFlipBit,indpb=0.05)
 toolbox.register("select",tools.selTournament,tournsize=3)
 
 print("_"*70)
+
+def main():
+    random.seed(64)
+    pop = toolbox.population(n=300)
+    CXPB, MUTPB = 0.5,0.2
+
+    print("Start ewolucji!")
+    
